@@ -23,28 +23,6 @@ const styles = theme => ({
   }
 });
 class Form extends Component {
-  /*
-  state = {
-    name: "",
-    company: "",
-    contractdetail: ""
-  };*/
-
-  /*handleChange = name => event => {
-    this.setState({
-      [name]: event.target.value
-    });
-  };
-
-  handleChange = company => event => {
-    this.setState({ [company]: event.target.value });
-  };
-
-  handleChange = contractdetail => event => {
-    this.setState({ [contractdetail]: event.target.value });
-  };*/
-  //handleClick = (name, company, contractdetail) => event => {
-
   render() {
     const { classes } = this.props;
     return (
@@ -54,7 +32,6 @@ class Form extends Component {
             id="name"
             label="Name"
             className={classes.textField}
-            //value={this.state.name}
             onChange={e => this.props.updateParent("name", e.target.value)}
             margin="normal"
           />
@@ -62,7 +39,6 @@ class Form extends Component {
             id="company"
             label="Company"
             className={classes.textField}
-            //value={this.state.company}
             onChange={e => this.props.updateParent("company", e.target.value)}
             margin="normal"
           />
@@ -70,7 +46,6 @@ class Form extends Component {
             id="contractdetail"
             label="Contract Detail"
             className={classes.textField}
-            //value={this.state.contractdetails}
             onChange={e =>
               this.props.updateParent("contractdetail", e.target.value)
             }

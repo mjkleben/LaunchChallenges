@@ -29,6 +29,7 @@ class App extends React.Component {
 
   render() {
     //console.log(this.state.array[0], this.state.array[1]);
+    //the parameters in Form are props
     return (
       <div className="App">
         <Form
